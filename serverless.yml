@@ -1,0 +1,29 @@
+service: iconik-upload
+
+frameworkVersion: "2"
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+custom:
+  dirconfig:
+    quiet: true
+# functions:
+#   hello:
+#     handler: handler.hello
+#   events:
+#     - http:
+#         path: api/
+#         method: post
+#         integration: lambda
+#         cors: true
+#         response:
+#           headers:
+#             Access-Control-Allow-Origin: "'*'"
+#             Content-Type: "'application/json'"
+#           template: $input.json('$')
+plugins:
+  - serverless-dir-config-plugin
+  - serverless-offline
+  - serverless-plugin-typescript

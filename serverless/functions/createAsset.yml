@@ -1,0 +1,14 @@
+createAsset:
+  handler: api/handler.createAsset
+  timeout: 28
+  events:
+    - http:
+        path: api/create-asset
+        method: post
+        integration: lambda
+        cors: true
+        response:
+          headers:
+            Access-Control-Allow-Origin: "'*'"
+            Content-Type: "'application/json'"
+          template: $input.json('$')

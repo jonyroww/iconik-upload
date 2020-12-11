@@ -1,0 +1,31 @@
+{
+  "name": "iconik-upload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-offline": "^6.8.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "@types/async": "^3.2.5",
+    "@types/aws-lambda": "^8.10.64",
+    "@workflowwin/iconik-api": "^2.1.37",
+    "aws-lambda": "^1.0.6",
+    "aws-sdk": "^2.803.0",
+    "axios": "^0.21.0",
+    "camaro": "^6.0.4",
+    "deep-list-dir": "^1.4.2",
+    "dotenv": "^8.2.0",
+    "file-type": "^16.0.1",
+    "form-data": "^3.0.0",
+    "queue": "^6.0.1",
+    "serverless-dir-config-plugin": "^0.1.5"
+  }
+}
